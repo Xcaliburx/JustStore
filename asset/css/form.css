@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    width: 500px;
+    min-height: 100vh;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+section h1 {
+    text-align: center;
+    color: #0c99f0;
+}
+
+section .sign {
+    padding: 1rem;
+    background-color: #ffffff;
+    margin-top: 2rem;
+    box-shadow: 2px 2px 5px 2px darkgray;
+}
+
+section .sign h1 {
+    text-align: left;
+    color: #000000;
+}
+
+section .sign p {
+    margin: .5em 0;
+}
+
+section .sign p a {
+    text-decoration: none;
+    color: #0c99f0;
+}
+
+section .sign .line {
+    width: 100%;
+    height: 3px;
+    background-color: #f94e30;
+    margin: .8em 0;
+}
+
+section .sign form .input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+section .sign form .input input {
+    width: 20em;
+    padding: .2em;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+section .sign form .input .pict {
+    width: 20em;
+}
+
+section .sign form .input .pict input {
+    width: 100%;
+}
+
+section .sign form .genders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section .sign form .genders .gender {
+    width: 20em;
+}
+
+section .sign form .genders .gender label {
+    margin-right: .3em;
+}
+
+section .sign form .address {
+    display: flex;
+    flex-direction: column;
+    margin: .5em 0;
+}
+
+section .sign form .address textarea {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: .5em;
+}
+
+section .sign form #sign {
+    width: 100%;
+    padding: .4em;
+    background-color: #f94e30;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+section .sign .remember {
+    margin: 1em 0 .5em 0;
+}
+
+section .sign .forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5em 0;
+}
+
+section .sign .forgot a {
+    color: #0c99f0;
+    text-decoration: none;
+}
+
+section .sign #exampleModalLabel {
+    text-align: center;
+    width: 100%;
+}
+
+section .sign #forget {
+    width: 100%;
+    color: #0c99f0;
+    background-color: #ffffff;
+    border: 0;
+}
+
+section .sign #reset {
+    width: 100%;
+    color: #ffffff;
+    background-color: #f94e30;
+}

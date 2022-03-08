@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .8em 1em;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+nav h1 {
+    color: #f94e30;
+    font-size: 30px;
+}
+
+nav .title-right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 1em 0 2em;
+}
+
+nav .srch {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .srch input {
+    width: 100%;
+    padding: .5em;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+nav .srch button {
+    position: absolute;
+    right: 5px;
+    height: 70%;
+    padding: 0 .5em;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .5em;
+    margin-left: .5em;
+}
+
+nav .login,
+nav .login:hover {
+    background-color: #ffffff;
+    color: #f94e30;
+    border: 1.5px solid #f94e30;
+    text-decoration: none;
+}
+
+nav .register,
+nav .register:hover {
+    color: #ffffff;
+    background-color: #f94e30;
+    border: 1.5px solid #f94e30;
+    text-decoration: none;
+}
+
+nav .dropdown,
+nav .dropdown-person {
+    position: relative;
+}
+
+nav .dropdown button,
+nav .dropdown-person button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    background-color: #ffffff;
+    border: 0;
+    color: darkgray;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 1em;
+}
+
+nav .dropdown button p {
+    margin: 0 .5em;
+}
+
+nav .dropdown-person .dropdown-content .line {
+    width: 100%;
+    height: .15em;
+    background-color: #f94e30;
+}
+
+nav .dropdown .dropdown-content,
+nav .dropdown-person .dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    min-width: 150px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+nav .dropdown .dropdown-content a,
+nav .dropdown-person .dropdown-content a {
+    color: darkgray
+}
+
+nav .dropdown:hover .dropdown-content,
+nav .dropdown-person:hover .dropdown-content {
+    display: flex;
+}
+
+section {
+    width: 1000px;
+    padding-top: 1em;
+    margin: 0 auto;
+}
+
+section .variable-width {
+    overflow: hidden;
+}
+
+section .variable-width img {
+    width: 600px;
+    height: 320px;
+    margin: 0 1em;
+    border-radius: 10px;
+}
+
+section .categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section .categories a {
+    text-decoration: none;
+    color: black;
+}
+
+section .categories .ctg {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: .7em;
+    margin-bottom: .5em;
+    border: 1px solid lightgray;
+    padding: .3em;
+    border-radius: 15px;
+}
+
+section .categories .ctg img {
+    margin-right: .2em;
+}
+
+section .categories .ctg p {
+    margin: 0;
+}
+
+section .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section .cards a {
+    text-decoration: none;
+    color: black;
+}
+
+section .cards .card {
+    width: 190px;
+    border: 1.5px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    margin-right: .5em;
+}
+
+section .cards .card .content {
+    padding: .5em;
+}
+
+section .cards .card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+}
+
+section .cards .card .price {
+    margin: .5em 0;
+}

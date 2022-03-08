@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .8em 1em;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+nav h1 {
+    color: #f94e30;
+    font-size: 30px;
+}
+
+nav .title-right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 1em 0 2em;
+}
+
+nav .srch {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .srch input {
+    width: 100%;
+    padding: .5em;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+nav .srch button {
+    position: absolute;
+    right: 5px;
+    height: 70%;
+    padding: 0 .5em;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .5em;
+    margin-left: .5em;
+}
+
+nav .dropdown,
+nav .dropdown-person {
+    position: relative;
+}
+
+nav .dropdown button,
+nav .dropdown-person button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    background-color: #ffffff;
+    border: 0;
+    color: darkgray;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 1em;
+}
+
+nav .dropdown button p {
+    margin: 0 .5em;
+}
+
+nav .dropdown-person .dropdown-content .line {
+    width: 100%;
+    height: .15em;
+    background-color: #f94e30;
+}
+
+nav .dropdown .dropdown-content,
+nav .dropdown-person .dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    min-width: 150px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+nav .dropdown .dropdown-content a,
+nav .dropdown-person .dropdown-content a {
+    color: darkgray
+}
+
+nav .dropdown:hover .dropdown-content,
+nav .dropdown-person:hover .dropdown-content {
+    display: flex;
+}
+
+section {
+    padding: 1em 7em;
+}
+
+section .prod {
+    display: flex;
+    flex-direction: row;
+}
+
+section .prod .add {
+    padding: .8em .8em .5em .8em;
+    background-color: #f94e30;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    margin-left: .5em;
+    text-decoration: none;
+}
+
+section .search {
+    display: flex;
+    justify-content: flex-end;
+}
+
+section .search input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: .2em;
+    width: 200px;
+    margin-left: .5em;
+}
+
+section .tables {
+    padding: 1em 0;
+}
+
+section .tables tbody tr .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section .tables tbody tr .name img {
+    width: 40px;
+    height: 40px;
+    margin-right: .5em;
+}
+
+section .tables tbody tr td .action {
+    display: flex;
+    flex-direction: row;
+}
+
+section .tables tbody tr td .action .view {
+    background-color: #3EBFBB;
+    border: 0;
+    border-radius: 5px;
+    padding: .7em 1em;
+    margin-right: .5em;
+}
+
+section .tables tbody tr td .action .view img {
+    width: 20px;
+    height: 20px;
+}
+
+section .tables tbody tr td .action form .trash {
+    background-color: #c0260a;
+    padding: .7em 1em;
+    border: 0;
+    border-radius: 5px;
+}
+
+section .tables tbody tr td .action form .trash img {
+    width: 20px;
+    height: 20px;
+}

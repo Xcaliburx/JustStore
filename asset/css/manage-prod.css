@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .8em 1em;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+nav h1 {
+    color: #f94e30;
+    font-size: 30px;
+}
+
+nav .title-right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 1em 0 2em;
+}
+
+nav .srch {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .srch input {
+    width: 100%;
+    padding: .5em;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+nav .srch button {
+    position: absolute;
+    right: 5px;
+    height: 70%;
+    padding: 0 .5em;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .5em;
+    margin-left: .5em;
+}
+
+nav .dropdown,
+nav .dropdown-person {
+    position: relative;
+}
+
+nav .dropdown button,
+nav .dropdown-person button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    background-color: #ffffff;
+    border: 0;
+    color: darkgray;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 1em;
+}
+
+nav .dropdown button p {
+    margin: 0 .5em;
+}
+
+nav .dropdown .dropdown-content,
+nav .dropdown-person .dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    min-width: 150px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+nav .dropdown .dropdown-content a,
+nav .dropdown-person .dropdown-content a {
+    color: darkgray
+}
+
+nav .dropdown:hover .dropdown-content,
+nav .dropdown-person:hover .dropdown-content {
+    display: flex;
+}
+
+section {
+    width: 700px;
+    margin: auto;
+    padding: 1em 0;
+}
+
+section .line {
+    width: 100%;
+    height: 1.5px;
+    background-color: #f94e30;
+}
+
+section form {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section form .input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .5em;
+}
+
+section form .input input,
+section form .input textarea {
+    width: 450px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: .2em;
+}
+
+section form .file {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: .2em;
+    margin-top: .8em;
+}
+
+section form button {
+    width: fit-content;
+    padding: .2em .7em;
+    background-color: #f94e30;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    margin: .8em auto;
+}
+
+section .pictures {
+    display: flex;
+    flex-direction: row;
+}
+
+section .picts-catalog {
+    width: fit-content;
+    padding-top: 1em;
+}
+
+section .picts-catalog .pict {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 1em .5em;
+}
+
+section .picts-catalog .pict img {
+    width: 124px;
+    height: 100px;
+}
+
+section .picts-catalog .act {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+section .picts-catalog .button button {
+    background-color: #c0260a;
+    padding: .5em;
+    margin-left: 1em;
+}
+
+section .picts-catalog .button button img {
+    width: 20px;
+    height: 20px;
+}
